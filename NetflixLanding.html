@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Netflix Clone (Rupato)</title>
+<link href="Neflix.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="Netflix.js"></script>
+</head>
+<body>
+	<header>
+		<a href="#" class="netFlixLogo"><img src="./Images/logo.png"></a>
+		<ul class="navigation">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Tv Shows</a></li>
+			<li><a href="#">Movies</a></li>
+			<li><a href="#">Latest</a></li>
+			<li><a href="#">My List</a></li>
+			
+		</ul>
+		<div class="search">
+			<input type="text" placeholder="Search"> 
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</div>
+	</header>
+	<div class="banner">
+		<img class="bg" src="./Images/bg.jpg">
+		<div class="content">
+				<img src="./Images/ST.png" class="movieLogo">
+				<h4>
+					<span>2016</span>
+					<span><i>12+</i></span>
+					<span>1hr 55min</span>
+					<span>Action</span>
+				</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+					labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+					ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum d
+					olore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+					deserunt mollit anim id est laborum.
+				</p>
+					<div class="contentButtons">
+						
+							<a href="#"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
+					
+							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Plus</a>
+						
+					</div>
+					<a class="play" onclick="toggleVideo()"><img src="./Images/play.png">Watch Trailer</a>
+		</div>
+	</div>
+	<div class="trailer">
+		<video src="./Videos/StrangerThingsSeason1.mp4" controls="true"></video>
+		<img src="./Images/close.png" onclick="toggleVideo()" class="closeVideo">
+	</div>
+</body>
+</html> 
