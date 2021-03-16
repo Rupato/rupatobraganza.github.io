@@ -38,7 +38,7 @@ section{
 .banner{
     position: relative;
     min-height: 100vh;
-    background: url('./Images/FE1.jpg');
+    background: url('./Images/FE1.png');
     background-size: cover;
     background-position: right;
     display: flex;
@@ -342,6 +342,3 @@ header.sticky ul li a{
     text-decoration: none;
   }
   
-  .Contact{
-    padding-bottom: 600px;
-  }
