@@ -40,9 +40,13 @@ $(document).ready(function(){
         //     //s = s.destroy();
         // }
     });
-    $(document).on('click','.menu a',function (){
+    $(document).on('click','.menu a,.aboutMeClick',function (){
     
     var type = $(this).attr('type');
+
+    if($(this).attr('type') == "button"){
+        type = 'sectionFour';
+    }
     $('html, body').animate({
         scrollTop: $("section[type="+type+"]").offset().top
     }, 1000);
