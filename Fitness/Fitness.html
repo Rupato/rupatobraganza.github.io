@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Fitness (Rupato)</title>
+<link href="Fitness.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="Fitness.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <ul >
+            <li onClick="toggleMenu()"><a href="#">Home</a></li>
+            <li onClick="toggleMenu()"><a href="#">Contact</a></li>
+            <li onClick="toggleMenu()"><a href="#">Training</a></li>
+            <li onClick="toggleMenu()"><a href="#">Team</a></li>
+            <li onClick="toggleMenu()"><a href="#">About</a></li>
+        </ul>
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo">Your Logo</h2>
+            <div class="toggle" onClick="toggleMenu()"></div>
+        </header>
+        <video src="./Videos/Fitness.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Be Stronger</h2>
+            <h3>Never Give Up</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus
+                try's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramb
+                led it to make a type specimen book. It has survive
+                d not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#">Join us</a>
+        </div>
+        <ul class="socialMediaIcons">
+            <li><a href="#"><img src="./Images/facebook (1).png" alt="facebook"></a></li>
+            <li><a href="#"><img src="./Images/instagram (1).png" alt="facebook"></a></li>
+            <li><a href="#"><img src="./Images/twitter (1).png" alt="facebook"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menu = document.querySelector('.toggle');
+            var banner = document.querySelector('.banner');
+            menu.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+    </script>
+</body>
+</html> 
