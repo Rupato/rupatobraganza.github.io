@@ -346,6 +346,14 @@ section::after{
     .icon-text h1{
         font-size: 2em;
     }
+    .box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: animateBox 20s linear infinite;
+        top: -35px;
+}
 
 }
 
